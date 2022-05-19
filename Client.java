@@ -2,11 +2,11 @@
    INSTITUTO DE MATEMÁTICA E COMPUTAÇÃO
    
    COM242 - SISTEMAS DISTRIBUIDOS
-   Rafael Frinhani 
-   04/05/2022
+   Alejandro Silvério dos Santos
+   18/05/2022
    
    RMI - Exemplo de implementação
-   Programa que utiliza funções remotas para realizar operacoes matemáticas.
+   Programa que utiliza funções remotas para realizar o cálculo da distância euclidianas entre dois pontos.
    
    Aplicação CLIENTE
 */
@@ -23,18 +23,20 @@ public class Client {
    Scanner keyboard = new Scanner(System.in);
    System.out.println("----Primeiro ponto----");
    System.out.println("Entre com valores x1 e y1 separados por espaço:");
-   double x = keyboard.nextDouble();
-   double y = keyboard.nextDouble();
+   double x1 = keyboard.nextDouble();
+   double y1 = keyboard.nextDouble();
    System.out.println("----Segundo ponto----");
    System.out.println("Entre com valores x2 e y2 separados por espaço:");
+   double x2 = keyboard.nextDouble();
+   double y2 = keyboard.nextDouble();
    System.out.println("");
 	
    try {  
          // Obtendo o registro 
-		Registry registry = LocateRegistry.getRegistry("200.235.74.50", 1099); 
+		Registry registry = LocateRegistry.getRegistry("10.0.0.160", 1099); 
     
         // Procur o registro do objeto remoto implementado no servidor 
-		Calc stub = (Calc) Naming.lookup("rmi://200.235.74.50:1099/Calc"); 
+		Calc stub = (Calc) Naming.lookup("rmi://10.0.0.160/Calc"); 
 
 		System.out.println("Invocando Método Remoto..."); 
 		System.out.println("");    
