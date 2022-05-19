@@ -16,5 +16,5 @@ import java.rmi.RemoteException;
 
 // Criação de uma interface chamada Calc, que define os contratos para acesso as funções de cada operação
 public interface Calc extends Remote {  
-   public double distanciaEuclidiana(double x1, double y2, double x2, double y2) throws RemoteException;
+   public double distanciaEuclidiana(double x1, double y1, double x2, double y2) throws RemoteException;
 } 
