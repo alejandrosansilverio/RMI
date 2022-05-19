@@ -17,7 +17,7 @@ import java.rmi.server.*;
 // Classe no servidor que implementa os métodos remotos
 public class ImplCalc implements Calc{ 
     
-    	public double distanciaEuclidiana(double x1, double y1, double x2, double y2) throws RemoteException
+    	public double distanciaEuclidiana(double x1, double y1, double x2, double y2) throws RemoteException // Calcula a distancia euclidiana entre dois pontos
     {
         System.out.println("Calculando a distancia euclidiana entre o ponto A (" +x1+","+y1+") e o ponto B ("+x2+","+y2+").");
         System.out.println(""); 
