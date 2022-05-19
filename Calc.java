@@ -2,11 +2,11 @@
    INSTITUTO DE MATEMÁTICA E COMPUTAÇÃO
    
    COM242 - SISTEMAS DISTRIBUIDOS
-   Rafael Frinhani 
-   04/05/2022
+   Alejandro Silvério dos Santos
+   18/05/2022
    
    RMI - Exemplo de implementação
-   Programa que utiliza funções remotas para realizar operacoes matemáticas.
+   Programa que utiliza funções remotas para realizar o cálculo da distância euclidianas entre dois pontos.
    
    INTERFACE dos Objetos Remotos
 */
